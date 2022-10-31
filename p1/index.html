@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - p1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <title>Formulário de inspeção e teste final</title>
+   <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+  <script src="JavaScript1.js"></script>
+</head>
+
+
+<body>
+<div style="overflow-x: hidden;">
+  <form name="ThisForm">
+  <div>
+    <table style="width:100%">
+    <tr>
+        <td><img src="https://www.nhs.com.br/wp-content/uploads/2020/09/logo_nhs_tagline_azul_450x450px.png" alt="NHS Sistemas De Energia" height="100" width="100"></td>
+        <td><h1>FORMULÁRIO DE INSPEÇÃO E TESTE FINAL</h1></td>
+      </tr>
+    </table>
+   </div>
+<hr size=1>
+
+<h2>INSPEÇÃO MECÂNICA</h2>
+    
+  <label class=inspecmec>Exitência de avarias no gabinete</label>
+  <input type="radio" name="1.1" value="sim"/> Sim
+<input type="radio" name="1.1" value="não"/> Não<br>
+  
+  <label class=inspecmec>Qualidade dos rodízios</label>
+  <input type="radio" name="1.2" value="sim"/> Sim
+<input type="radio" name="1.2" value="não"/> Não<br>
+  
+  <label class=inspecmec>Peças soltas no interior do gabinete</label>
+  <input type="radio" name="1.3" value="sim"/> Sim
+<input type="radio" name="1.3" value="não"/> Não<br>
+  
+  <label class=inspecmec>Qualidade dos botões liga/desliga, bypass, teclas de comando</label>
+  <input type="radio" name="1.4" value="sim"/> Sim
+<input type="radio" name="1.4" value="não"/> Não<br>
+  
+  <label class=inspecmec>Etiquetas, tampografia e painel</label>
+  <input type="radio" name="1.5" value="sim"/> Sim
+<input type="radio" name="1.5" value="não"/> Não<br>
+  
+<br>
+  <hr size=1>
+<div>
+  
+<h2>INSPEÇÃO DE CABOS E CONEXÕES</h2>
+  
+      <label class=inspecmec>Verificar aperto dos parafusos das conexões das placas, disjuntores e borneiras</label>
+  <input type="radio" name="2.1" value="sim"/> Sim
+<input type="radio" name="2.1" value="não"/> Não<br>
+  
+      <label class=inspecmec>Modelagem dos chicotes conforme EP</label>
+  <input type="radio" name="2.2" value="sim"/> Sim
+<input type="radio" name="2.2" value="não"/> Não<br>
+  
+      <label class=inspecmec>Qualidade das conexões faston (terminais travados)</label>
+  <input type="radio" name="2.3" value="sim"/> Sim
+<input type="radio" name="2.3" value="não"/> Não<br>
+  
+      <label class=inspecmec>Modelagem de todosos cabos flats</label>
+  <input type="radio" name="2.4" value="sim"/> Sim
+<input type="radio" name="2.4" value="não"/> Não<br>
+  
+      <label class=inspecmec>Solda dos cabos</label>
+  <input type="radio" name="2.5" value="sim"/> Sim
+<input type="radio" name="2.5" value="não"/> Não<br>
+  
+      <label class=inspecmec>Fios/chicotes prõximos aos ventiladores com risco de travamento</label>
+  <input type="radio" name="2.6" value="sim"/> Sim
+<input type="radio" name="2.6" value="não"/> Não<br>
+  
+      <label class=inspecmec>Polaridade e trava do engate rápido (se aplicável)</label>
+  <input type="radio" name="2.7" value="sim"/> Sim
+<input type="radio" name="2.7" value="não"/> Não<br>
+  
+      <label class=inspecmec>Ligação e conexão dos ventiladores/sensores/flets</label>
+  <input type="radio" name="2.8" value="sim"/> Sim
+<input type="radio" name="2.9" value="não"/> Não<br>
+  
+      <label class=inspecmec>Fixação da placa ALM_BAT no disjuntos (se aplicável)</label>
+  <input type="radio" name="2.10" value="sim"/> Sim
+<input type="radio" name="2.10" value="não"/> Não<br>
+  
+  
+  
+  
+</div>
+<br>
+  <hr size=1></hr>
+  </p>
+ <h2> <b>VERIFICAÇÃO DE PLACA E COMPONENTES</b> </h2>
+   </br>
+<div>
+    <label class=inspecmec>Fusíveis (bateria, barramento, AC e carregador)</label>
+  <input type="radio" name="3.1" value="sim"/> Sim
+<input type="radio" name="3.1" value="não"/> Não<br>
+      <label class=inspecmec>Disjuntores</label>
+  <input type="radio" name="3.2" value="sim"/> Sim
+<input type="radio" name="3.2" value="não"/> Não<br>
+      <label class=inspecmec>Verificar placas periféricas se não estão tortas (placa fonte, CPU, driver, etc.)</label>
+  <input type="radio" name="3.3" value="sim"/> Sim
+<input type="radio" name="3.3" value="não"/> Não<br>
+      <label class=inspecmec>Verificar se existem componentes tombados (componentes PTH)</label>
+  <input type="radio" name="3.4" value="sim"/> Sim
+<input type="radio" name="3.4" value="não"/> Não<br>
+<p class="num_serie">
+  <label class="num">Medir com múltimetro o valor da resistência equivalente do inrush do barramento:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+  </div>
+
+<hr size=1></hr>
+   <div>
+     <h2>ENSAIOS CONFORME PARÂMETROS DE TESTE</h2>
+     
+     <p class="num_serie">
+  <label class="num">Calibração Vout no inversor:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+    
+     <p class="num_serie">
+  <label class="num">Calibração Vout no display (se aplicável):  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Largura Flybacks:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Polaridade Flybacks:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Tensão máxima no FET da fonte na partida e plena carga:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">+5V fonte principal:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">+12V fonte principal:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+    
+  </div>
+
+<hr size=1>
+<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
