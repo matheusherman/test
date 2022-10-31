@@ -8,15 +8,11 @@ form {
   font-family: sans-serif;
   font-weight: normal;
   font-size: 9pt;
-       
-}
-
-/*fieldset {
-  /* Para ver as bordas do formulário
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 1px solid black;
   border-radius: 1em;
-}*/
+  background-color: white;
+}
 
 input {
 
@@ -86,8 +82,3 @@ select {
  border-top: white;
 
 }
-
-.button.button-custom:hover,.button.button-custom:active {
-
-color: #0000FF;
-background-color: #123456;
